@@ -4,8 +4,8 @@ build: common-docker-compose \
 
 docker-compose-up-dev:
 	docker-compose \
-	    -f docker/dev-docker-compose.yml \
-	    -f docker/cli-docker-compose.yml \
+	    -f ./docker/dev-docker-compose.yml \
+	    -f ./docker/cli-docker-compose.yml \
 	    up -d --build
 
 

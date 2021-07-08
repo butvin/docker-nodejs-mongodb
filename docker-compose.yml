@@ -12,6 +12,7 @@ services:
             - MONGO_INITDB_ROOT_PASSWORD=root
         volumes:
             - docker/.data/.mongodb:/data/db/mongodb
+
     nodejs:
         build:
             context: ./docker
@@ -20,7 +21,7 @@ services:
             - mongodb
         volumes:
             - /app/node_modules
-            - ../:/app
+            - ./:/app
         ports:
             - "3000:3000"
 
