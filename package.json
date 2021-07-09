@@ -1,0 +1,28 @@
+{
+  "devDependencies": {
+    "nodemon": "^2.0.11"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongodb": "^3.6.10"
+  },
+  "name": "nodejs-mongodb",
+  "version": "1.0.0",
+  "description": "nodejs",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/butvin/docker-nodejs-mongodb.git"
+  },
+  "keywords": ["nodejs", "mongodb", "docker", "express"],
+  "author": "butvin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/butvin/docker-nodejs-mongodb/issues"
+  },
+  "homepage": "https://github.com/butvin/docker-nodejs-mongodb#readme"
+}

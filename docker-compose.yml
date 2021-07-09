@@ -11,7 +11,7 @@ services:
       - MONGO_INITDB_ROOT_USERNAME=root
       - MONGO_INITDB_ROOT_PASSWORD=root
     volumes:
-      - ./docker/.data/mongo:/data/mongo
+      - ./docker/.data/mongo:/data/mongodb
 
   nodejs:
     container_name: nodejs
