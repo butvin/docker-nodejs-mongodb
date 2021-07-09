@@ -12,6 +12,7 @@ app.listen(3000, () => {
 const MongoClient = require('mongodb').MongoClient;
 
 const url = 'mongodb://mongodb:27017'
+// const url = process.env.MONGO_CONNECT_URL
 
 MongoClient.connect(url, (error, client) => {
     if(error){
