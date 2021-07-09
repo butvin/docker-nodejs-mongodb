@@ -10,7 +10,7 @@ common-docker-compose:
 	docker-compose -f 'docker-compose.yml' up -d --build
 
 docker-compose-ps:
-	docker-compose -f docker-compose.yml -f docker/dev-docker-compose.yml ps
+	docker-compose -f 'docker-compose.yml' -f 'docker/dev-docker-compose.yml' ps
 
 mongo-log:
 	#docker-compose -f docker/cmd-docker-compose.yml logs -f mongodb.log

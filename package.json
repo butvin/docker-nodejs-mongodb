@@ -9,7 +9,7 @@
   "name": "nodejs-mongodb",
   "version": "1.0.0",
   "description": "nodejs",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
     "dev": "nodemon server.js",
     "test": "test"
@@ -18,7 +18,12 @@
     "type": "git",
     "url": "git+https://github.com/butvin/docker-nodejs-mongodb.git"
   },
-  "keywords": ["nodejs", "mongodb", "docker", "express"],
+  "keywords": [
+    "nodejs",
+    "mongodb",
+    "docker",
+    "express"
+  ],
   "author": "butvin",
   "license": "ISC",
   "bugs": {

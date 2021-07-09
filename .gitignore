@@ -1,5 +1,6 @@
 .idea
 node_modules
 *log
-docker/.data/mobgo
+docker/.data/mobgodb/
+docker/.data/
 /vendor/
