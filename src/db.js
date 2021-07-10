@@ -18,10 +18,12 @@ const options = {
 
 const url = `mongodb://${MONGO_USERNAME}:${MONGO_PASSWORD}@${MONGO_HOSTNAME}:${MONGO_PORT}/${MONGO_DB}?authSource=admin`;
 
-mongoose.connect(url, options).then(function() {
+
+mongoose.connect(url, options).then(function () {
     console.log(`mongodb is connected now`);
-}).catch(function(error) {
+}).catch(function (error) {
     console.log(error);
-}).finally(()=> {
-    console.log('__THIS_CLOSURE__', this);
+    console.error(error);
+}).finally(() => {
+    console.info('__THIS_CLOSURE__', this);
 });

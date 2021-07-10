@@ -16,13 +16,13 @@ const url = 'mongodb://mongodb:27017'
 
 MongoClient.connect(url, (error, client) => {
     if(error){
-        throw new Error('No connect to the database')
+        throw new Error(`No connect to the database`)
     }
 
-    console.log('Successfully connected to the database')
+    console.log(`Successfully connected to the database`)
 })
 
-app.get('/', (request, res) => {
+app.get('/', (req, res) => {
     res.send('Index page');
     console.log(req)
     console.log(res)
