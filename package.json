@@ -12,11 +12,11 @@
     "mongoose": "^5.13.2"
   },
   "name": "nodejs-mongodb",
-  "version": "0.0.1-alpha",
+  "version": "0.0.2",
   "description": "nodejs",
   "main": "src/index.js",
   "scripts": {
-    "dev": "cross-env NODE_ENV=dev nodemon src/index.js",
+    "dev": "cross-env NODE_ENV=dev nodemon node-server.js",
     "prod": "cross-env NODE_ENV=prod",
     "test": "cross-env NODE_ENV=test"
   },
